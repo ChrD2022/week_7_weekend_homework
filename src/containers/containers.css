@@ -1,0 +1,25 @@
+.list-container{
+    border: 1px solid blue;
+    padding: 25px;
+}
+
+.list{
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    
+}
+
+.list-item{
+    border: 1px solid ;
+    list-style: none;
+    padding: 10px;
+    
+}
+
+.button{
+    padding: 1px;
+}
