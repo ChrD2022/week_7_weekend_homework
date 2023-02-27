@@ -26,10 +26,16 @@
     
 }
 
+.move-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    border: 1px solid red;
+}
+
 .move-list-item{
     border: 1px solid ;
-    list-style: none;
-    padding: 10px;
+    padding: 1px;
 }
 
 .button{

@@ -27,7 +27,7 @@ const SinglePokeInfo = ({selectedPoke}) => {
             Type : {capitalise(selectedPoke.types[0].type.name)}<br/>
             Height : {meterHeight(selectedPoke.height)} m<br/>
             Weight : {meterHeight(selectedPoke.weight)} kg<br/>
-            Can Learn : {moveList}
+            Can Learn : <ul className="move-list">{moveList}</ul>
         </div>
     )
 };
