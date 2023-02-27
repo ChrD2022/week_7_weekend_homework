@@ -5,7 +5,7 @@ import ListItem from "./ListItem";
 const PokeList = ({pokemons}) => {
 
     const pokeItems = pokemons.map((pokemon, index) => {
-        return <ListItem pokemon={pokemon} key={index}/>
+        return <ListItem pokemon={pokemon} key={index} value={pokemon.url}/>
     });
 
     

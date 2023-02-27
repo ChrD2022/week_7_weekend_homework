@@ -3,6 +3,12 @@
     padding: 25px;
 }
 
+.single-list-container{
+    border: 1px solid blue;
+    padding: 25px;
+    width: 500px;
+}
+
 .list{
     border: 1px solid red;
 
@@ -18,6 +24,12 @@
     list-style: none;
     padding: 10px;
     
+}
+
+.move-list-item{
+    border: 1px solid ;
+    list-style: none;
+    padding: 10px;
 }
 
 .button{
