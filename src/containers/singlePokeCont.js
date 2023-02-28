@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import SinglePokeInfo from "../components/SinglePokeInfo";
-import ListItem from "../components/ListItem";
+
 
 
 const SinglePokeCont = () => {
@@ -11,13 +11,11 @@ const SinglePokeCont = () => {
         loadPokemon()
     }, []);
 
-    const loadPokemon = function(){
-        fetch('https://pokeapi.co/api/v2/pokemon/4/')
+    const loadPokemon = function(url){
+        fetch(url)
         .then(res => res.json())
         .then(pokeSelect => setSelectedPoke(pokeSelect))
     };
-
-    // <ListItem/>handleChoiceClick("choose").addEventListener("click", setSelectedPoke)};
 
     return(
         <div className="single-list-container">

@@ -13,7 +13,7 @@
     border: 1px solid red;
 
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: baseline;
 
     
@@ -40,4 +40,8 @@
 
 .button{
     padding: 1px;
+}
+
+.sprite{
+    height: 200px;
 }

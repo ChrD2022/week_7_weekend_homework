@@ -2,20 +2,30 @@ import '../containers/containers.css';
 import React from "react";
 import ListItem from "./ListItem";
 
-const PokeList = ({pokemons}) => {
+const PokeList = ({pokemons, onSelectedPokemon}) => {
+
+
+    const handleClick = (event) => {
+        const chose_me = pokemons[event.target.value];
+        onSelectedPokemon(chose_me)
+    }
 
     const pokeItems = pokemons.map((pokemon, index) => {
-        return <ListItem pokemon={pokemon} key={index} value={pokemon.url}/>
+        return <select pokemon= {pokemon} key={index} value={index}/>
     });
 
     
 
     return(
+        <>
         <div className='list'>
-            <ul>
+            
+            <button onChange={handleClick}/>
+            
             {pokeItems}
-            </ul>
+            
         </div>
+        </>
     )
 };
 

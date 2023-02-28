@@ -21,7 +21,7 @@ const SinglePokeInfo = ({selectedPoke}) => {
 
     return(
         <div>
-            <img src={selectedPoke.sprites.front_default} /><br/>
+            <img className="sprite" src={selectedPoke.sprites.front_default} /><br/>
             ID : {selectedPoke.id}<br/>
             Name : {capitalise(selectedPoke.name)}<br/>
             Type : {capitalise(selectedPoke.types[0].type.name)}<br/>
